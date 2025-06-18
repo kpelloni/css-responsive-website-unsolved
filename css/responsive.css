@@ -4,14 +4,127 @@
   * Add the media rule and the styles that belong to the MOBILE view only
 */
 
+/* desktop */
 @media (min-width: 1024px) {
   /* .top-navigation .trigram {
-    display: none;
+    display: none; */
+  
+  /* 👇👇👇 Add the styles that belong to the DESKTOP view only beneath 👇👇👇 */
+  a:hover {
+    background-color: rgb(212, 210, 210);
+  }
+  
+  .facebook:hover,
+  .instagram:hover,
+  .twitter:hover,
+  .linkedin:hover,
+  .fa:hover { 
+  color: white;
+  }
+
+  /* .teammate-social-icons:hover {
+    color: rgb(133, 23, 23)
   } */
 
-  /* 👇👇👇 Add the styles that belong to the DESKTOP view only beneath 👇👇👇 */
 }
 
 /* 👇👇👇 Add the media rule and the styles that are common within the TABLET and MOBILE views beneath 👇👇👇 */
+@media (max-width: 1023px) {
+  .top-navigation .trigram {
+    display: block;
+  }
+
+  li {
+    display:none;
+  }
+
+  .portfolio-list{
+    display: flex;
+    flex-direction: column;    
+    justify-content: flex-start;
+    align-items: center;
+    
+  }
+
+  .portfolio-item {
+    border: 2px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    }
+
+  .portfolio-item-info{
+    display: flex;
+    flex-direction: column;
+    }
+
+  .portfolio-img-wrapper {
+    width: 50%;
+    height: auto;
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .teammates-list-wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 40px;
+    border: 1px solid black;
+  }
+
+  .teammates-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border: 3px solid blue;
+  }
+
+  .teammate {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 45%;
+    border: 2px solid red;
+  }
+
+  .teammate-img-wrapper {
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid green;
+  }
+
+
+  /* Add any common styles for tablet and mobile views here */
+  .subtext {
+    padding: 20px;
+  }
+
+.teammates-list:before,
+.teammates-list:after {
+  display: none;
+}
+
+
+}
 
 /* 👇👇👇 Add the media rule and the styles that belong to the MOBILE view only beneath 👇👇👇 */
+@media (max-width: 767px) {
+  /* Add the styles that belong to the MOBILE view only beneath */
+  .top-navigation .trigram {
+    display: block;
+  }
+
+  /* Example of a mobile-specific style 
+  .mobile-only {
+    display: block; 
+  } */
+}
