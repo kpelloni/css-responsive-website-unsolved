@@ -34,7 +34,7 @@
     display: block;
   }
 
-  li {
+  .top-navigation li {
     display:none;
   }
 
@@ -72,7 +72,6 @@
     flex-direction: row;
     flex-wrap: wrap;
     gap: 40px;
-    border: 1px solid black;
   }
 
   .teammates-list {
@@ -82,7 +81,6 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    border: 3px solid blue;
   }
 
   .teammate {
@@ -91,7 +89,6 @@
     align-items: center;
     text-align: center;
     width: 45%;
-    border: 2px solid red;
   }
 
   .teammate-img-wrapper {
@@ -102,8 +99,86 @@
     border: 1px solid green;
   }
 
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 
-  /* Add any common styles for tablet and mobile views here */
+  .footer-content .fa{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .social-icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px;
+    width: 0;
+  }
+
+  .footer-contacts {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+    width: auto;
+    gap: 20px 10px;
+    padding: 40px 20px 60px;
+    margin: 0 auto;
+  }
+
+  .footer-contacts .address{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+
+  }
+
+  .footer-contacts .email {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  .footer-contacts li important {
+    color: white;
+  }
+
+.footer-contacts p {
+  padding: 0 20px;
+  margin: 0 30px;
+  border: 1px solid white;
+}
+
+  .footer-contacts .phone {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+    width: 100%;
+    padding: 0 10px;
+    color: white;
+  }
+
+.footer-content span{
+    display: none
+  }
+
+  
+    /* Add any common styles for tablet and mobile views here */
   .subtext {
     padding: 20px;
   }
@@ -112,17 +187,83 @@
 .teammates-list:after {
   display: none;
 }
+.top-navigation li {
+    display:none;
+  }
 
-
+  
 }
 
 /* 👇👇👇 Add the media rule and the styles that belong to the MOBILE view only beneath 👇👇👇 */
 @media (max-width: 767px) {
+  /* * {
+    width: 100%;
+  } */
   /* Add the styles that belong to the MOBILE view only beneath */
   .top-navigation .trigram {
     display: block;
   }
+  .top-navigation li {
+    display:none;
+  }
 
+  .content-vertical {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+    padding: 20px;
+  }
+
+  .footer-content {
+    gap: 10px;
+    color: white
+  }
+
+  .footer-content span {
+    display: block;
+  }
+    
+  .portfolio-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    border: 2px solid pink;
+  }
+
+  .portfolio-img-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .portfolio-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+
+.footer-content .social-icons{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer-contacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0 60px;
+    height: 100%;
+    margin: 0 auto;
+  }
   /* Example of a mobile-specific style 
   .mobile-only {
     display: block; 
