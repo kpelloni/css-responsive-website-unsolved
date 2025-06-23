@@ -27,9 +27,9 @@ This assignment should prove that a student is able to:
 - [ x] The project's file/folder structure should NOT be edited!
 - [x ] The index.html file should NOT be edited!
 - [x ] The `/css/styles.css` file should NOT be edited!
-- [ ] VSCode IDE MUST have 0 problems listed
-- [ ] The code of the index.html and styles.css should pass the W3C validation (Feel free to use either the "w3c web validator" VSCode extension or the "Online w3c Markup Validation Service")
-- [ ] The code MUST be formatted with Prettier.
+- [ x] VSCode IDE MUST have 0 problems listed
+- [x ] The code of the index.html and styles.css should pass the W3C validation (Feel free to use either the "w3c web validator" VSCode extension or the "Online w3c Markup Validation Service")
+- [x ] The code MUST be formatted with Prettier.
 - [ ] Push the changes to the Github repo, when finished.
 - [ ] Submit a .txt file with the Github repo url.
 
@@ -38,14 +38,14 @@ This assignment should prove that a student is able to:
 Acceptance criteria:
 
 - [ x] The responsive HTML meta tag is set.
-- [ ] The website should replicate the mockup for desktop, tablet, and mobile views, incorporating all aspects such as fonts, font sizes, colors, paddings, margins, gaps, etc.
-- [ ] The hover styles are added for the desktop view for:
+- [ x] The website should replicate the mockup for desktop, tablet, and mobile views, incorporating all aspects such as fonts, font sizes, colors, paddings, margins, gaps, etc.
+- [ x] The hover styles are added for the desktop view for:
   - The top navigation items
   - The social icons of the teammate
   - The links in the footer (social icons and labels, emails, phone numbers)
-- [ ] The index.html file must remain unchanged.
-- [ ] The styles.css file should remain unaltered. Any necessary styles should be appended to the /css/responsive.css file.
-- [ ] Media queries should address the following viewport ranges:
+- [ x] The index.html file must remain unchanged.
+- [x ] The styles.css file should remain unaltered. Any necessary styles should be appended to the /css/responsive.css file.
+- [ x] Media queries should address the following viewport ranges:
   - Desktop: 1024px and above
   - Tablets: 768px (0px) to 1023px
   - Mobile devices: 360px (0px) to 767px

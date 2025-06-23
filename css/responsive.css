@@ -17,14 +17,14 @@
   .facebook:hover,
   .instagram:hover,
   .twitter:hover,
-  .linkedin:hover,
+  .linked-in:hover,
   .fa:hover { 
-  color: white;
+  color: rgb(204, 201, 201);
   }
 
-  /* .teammate-social-icons:hover {
-    color: rgb(133, 23, 23)
-  } */
+  .teammate-social-icons:hover {
+    color: rgb(202, 202, 202)
+  } 
 
 }
 
@@ -32,6 +32,10 @@
 @media (max-width: 1023px) {
   .top-navigation .trigram {
     display: block;
+  }
+
+  .teammates-content .subtext {
+    width: 100%;
   }
 
   .top-navigation li {
@@ -47,7 +51,6 @@
   }
 
   .portfolio-item {
-    border: 2px solid black;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -96,7 +99,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid green;
+    /* border: 1px solid green; */
+  }
+
+  .teammate-social-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
   }
 
   .footer-content {
@@ -145,6 +156,7 @@
 
   .footer-contacts .email {
     text-align: center;
+    color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -152,17 +164,17 @@
     padding: 0 10px;
   }
 
-  .footer-contacts li important {
-    color: white;
+  .footer-contacts ul li a{
+    color: white !important;
   }
 
-.footer-contacts p {
+  .footer-contacts p {
   padding: 0 20px;
   margin: 0 30px;
-  border: 1px solid white;
+  /* border: 1px solid white; */
 }
 
-  .footer-contacts .phone {
+  .footer-contacts .phones {
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -190,6 +202,17 @@
 .top-navigation li {
     display:none;
   }
+  .facebook:hover,
+  .instagram:hover,
+  .twitter:hover,
+  .linked-in:hover,
+  .fa:hover { 
+  color: rgb(204, 201, 201);
+  }
+
+  .teammate-social-icons:hover {
+    color: rgb(202, 202, 202)
+  } 
 
   
 }
@@ -215,13 +238,10 @@
     padding: 20px;
   }
 
-  .footer-content {
-    gap: 10px;
-    color: white
-  }
-
-  .footer-content span {
-    display: block;
+  .mobile-only .teammate {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
   }
     
   .portfolio-content {
@@ -229,8 +249,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
-    border: 2px solid pink;
   }
 
   .portfolio-img-wrapper{
@@ -247,12 +265,79 @@
     align-items: center;
   }
   
+  .portfolio-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .portfolio-item-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .item-description {
+    text-align: center;
+    padding: 10px;
+  }
+
+  .teammates-list-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  
+  .content p.subtext {
+    text-align: center;
+    text-wrap: balance;
+  }
+  .teammate {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    /* margin-bottom: 20px; */
+    border: 2px solid black;
+  }
+
+  .teammate-img-wrapper {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin: 5px;
+  }
+
+  .teammate-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    padding: 5px;
+    margin: 5px;
+  }
+
+  .teammate-social-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
 
 .footer-content .social-icons{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    color: white;
   }
 
   .footer-contacts {
@@ -263,6 +348,25 @@
     padding: 40px 0 60px;
     height: 100%;
     margin: 0 auto;
+  }
+
+  .footer-content {
+    gap: 10px;
+  }
+  .facebook:hover,
+  .instagram:hover,
+  .twitter:hover,
+  .linked-in:hover,
+  .fa:hover { 
+  color: rgb(204, 201, 201);
+  }
+
+  .teammate-social-icons:hover {
+    color: rgb(202, 202, 202)
+  } 
+
+  .footer-content span {
+    display: block;
   }
   /* Example of a mobile-specific style 
   .mobile-only {
